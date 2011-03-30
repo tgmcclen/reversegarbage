@@ -1,0 +1,14 @@
+/*
+Theme Name: Reverse Garbage
+Theme URI: http://reversgegarbage.org.au/
+Description: Theme for the Reverse Garbage website
+Author: the Reverse Garbage team
+Template: twentyten
+Version: 1.0
+*/
+
+@import url("../twentyten/style.css");
+
+#site-title a {
+    color: #009900;
+}
