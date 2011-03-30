@@ -17,8 +17,6 @@ get_header(); ?>
 
 		<div id="container">
 			<div id="content" role="main">
-
-HELLO WORLD!!!      
 			<?php
 			/* Run the loop to output the posts.
 			 * If you want to overload this in a child theme then include a file

@@ -1,0 +1,4 @@
+- Update permalinks and .htacess file
+- Install all required plugins
+  - Add redirect custom field for "redirect by custom field" plugin
+- Remove the custom menus and instead rely upon wp_page_menu???

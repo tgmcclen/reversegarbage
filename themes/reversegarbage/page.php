@@ -17,7 +17,7 @@ get_header(); ?>
 		<div id="container">
 			<div id="content" role="main">
 			  
-      <?php get_sidebar( 'main' ); ?>
+      <?php get_sidebar( 'before-content' ); ?>
 
 			<?php
 			/* Run the loop to output the page.
@@ -26,6 +26,8 @@ get_header(); ?>
 			 */
 			get_template_part( 'loop', 'page' );
 			?>
+
+      <?php get_sidebar( 'after-content' ); ?>
 
 			</div><!-- #content -->
 		</div><!-- #container -->
