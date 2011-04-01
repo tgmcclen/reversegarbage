@@ -12,3 +12,22 @@ Version: 1.0
 #site-title a {
     color: #009900;
 }
+
+/* =Menu 
+   additional rules as we are using the Flexi Pages widget (wp_page_menu) as opposed to wp_nav_menu
+-------------------------------------------------------------- */
+
+#access {
+	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+}
+#access ul li.current_page_item > a,
+#access ul li.current_page_ancestor > a {
+	color: #fff;
+}
+* html #access ul li.current_page_item a,
+* html #access ul li.current_page_ancestor a {
+	color: #fff;
+}
+#access .widget-container {
+	margin: 0;
+}

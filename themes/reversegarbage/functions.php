@@ -1,6 +1,14 @@
 <?php
 function reversegarbage_widgets_init() {
-	// Area 1, located at the top of the sidebar.
+	register_sidebar( array(
+		'name' => __( 'Navigation Widget Area', 'reversegarbage' ),
+		'id' => 'navigation-widget-area',
+		'description' => __( 'Navigation widget area', 'reversegarbage' ),
+		'before_widget' => '<div id="%1$s" class="widget-container %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
 	register_sidebar( array(
 		'name' => __( 'Before Content Widget Area', 'reversegarbage' ),
 		'id' => 'before-content-widget-area',
@@ -10,7 +18,7 @@ function reversegarbage_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
-register_sidebar( array(
+  register_sidebar( array(
 	'name' => __( 'After Content Widget Area', 'reversegarbage' ),
 	'id' => 'after-content-widget-area',
 	'description' => __( 'After content widget area', 'reversegarbage' ),
