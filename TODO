@@ -2,3 +2,4 @@
 - Install all required plugins
   - Add redirect custom field for "redirect by custom field" plugin
 - Remove the custom menus and instead rely upon wp_page_menu???
+- Re-upload the twentyten theme completely from WP 3.1 archive (it appears to have been modified and functions are missing)

@@ -80,7 +80,10 @@
 			<div id="access" role="navigation">
 			  <?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff */ ?>
 				<div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentyten' ); ?>"><?php _e( 'Skip to content', 'twentyten' ); ?></a></div>
-				<?php get_sidebar( 'navigation' ); ?>
+				<div id="navbar">
+				  <?php get_sidebar( 'navigator' ); ?>
+				  <?php get_sidebar( 'tool' ); ?>
+				</div>
 			</div><!-- #access -->
 		</div><!-- #masthead -->
 	</div><!-- #header -->

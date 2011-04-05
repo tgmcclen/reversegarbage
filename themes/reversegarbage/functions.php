@@ -1,14 +1,23 @@
 <?php
 function reversegarbage_widgets_init() {
 	register_sidebar( array(
-		'name' => __( 'Navigation Widget Area', 'reversegarbage' ),
-		'id' => 'navigation-widget-area',
-		'description' => __( 'Navigation widget area', 'reversegarbage' ),
+		'name' => __( 'Navigator Widget Area', 'reversegarbage' ),
+		'id' => 'navigator-widget-area',
+		'description' => __( 'Navigator widget area', 'reversegarbage' ),
 		'before_widget' => '',
 		'after_widget' => '',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
+  register_sidebar( array(
+  	'name' => __( 'Tool Widget Area', 'reversegarbage' ),
+  	'id' => 'tool-widget-area',
+  	'description' => __( 'Tool widget area', 'reversegarbage' ),
+  	'before_widget' => '',
+  	'after_widget' => '',
+  	'before_title' => '<h3 class="widget-title">',
+  	'after_title' => '</h3>',
+  ) );
 	register_sidebar( array(
 		'name' => __( 'Before Content Widget Area', 'reversegarbage' ),
 		'id' => 'before-content-widget-area',

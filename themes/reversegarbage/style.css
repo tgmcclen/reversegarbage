@@ -31,3 +31,45 @@ Version: 1.0
 #access .widget-container {
 	margin: 0;
 }
+#access #navbar {
+}
+#access #navigator {
+	float: left; 
+	width: 628px;
+}
+#access #tool {
+	float: right; 
+	width: 288px; 
+	text-align: right;
+	margin: 4px 12px 0 0;
+}
+
+/* =Layout
+-------------------------------------------------------------- */
+
+/*
+LAYOUT: Two columns
+DESCRIPTION: Two-column fixed layout with one sidebar right of content
+*/
+
+#container {
+	float: left;
+	margin: 0 -340px 0 0;
+	width: 100%;
+}
+#content {
+	margin: 0 320px 0 0;
+}
+#primary,
+#secondary {
+	float: right;
+	overflow: hidden;
+	width: 300px;
+}
+#secondary {
+	clear: right;
+}
+#footer {
+	clear: both;
+	width: 100%;
+}
