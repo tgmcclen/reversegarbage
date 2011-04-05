@@ -36,12 +36,15 @@ Version: 1.0
 #access #navigator {
 	float: left; 
 	width: 628px;
+	margin-left: 12px;
 }
 #access #tool {
 	float: right; 
 	width: 288px; 
-	text-align: right;
 	margin: 4px 12px 0 0;
+}
+#access #tool input[type=text] {
+	width: 160px;
 }
 
 /* =Layout
@@ -72,4 +75,30 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 #footer {
 	clear: both;
 	width: 100%;
+}
+#main {
+	padding-top: 10px;
+}
+
+/* =Social Widget */
+.Social_Widget {
+	background-color: #eff0f4;
+	float: left;
+	padding: 0 4px;
+	width: 100%;
+}
+.Social_Widget h3 {
+	float: left;
+	text-transform: uppercase;
+	margin: 12px 0 0 0;
+}
+.Social_Widget div {
+	float: right;
+	text-align: right;
+}
+
+/* =Widget Area */
+/* remove all padding for tighter control of layout */
+#main .widget-area ul {
+	padding: 0;
 }
