@@ -9,8 +9,62 @@ Version: 1.0
 
 @import url("../twentyten/style.css");
 
+body,
+input,
+textarea,
+.page-title span,
+.pingback a.url {
+	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+}
+
+#wrapper {
+	margin-top: 0;
+}
+/* =Header
+   We have taken complete control of header, extra rules required
+-------------------------------------------------------------- */
+#header {
+	padding-top: 0;
+}
+/* The branding section is using relative and absolute position as outlined in the link to help with text aligned to the bottom:
+  http://stackoverflow.com/questions/5288336/put-text-at-bottom-of-div */
+#branding {
+	background-color: #3e5889;
+	position: relative;
+}
+#branding img {
+	border: none;
+	display: inline;
+	float: none;
+	margin: 10px 10px 0 10px;
+}
+#site-title {
+	width: 2em; /* arbitrary short value to make title words wrap */
+	font-size: 70px;
+	line-height: 60px;
+	font-weight: bold;
+	float: none;
+	position: absolute;
+	bottom: 0;
+	left: 190px;
+	letter-spacing: -4px;
+}
+#site-description {
+	float: none;
+	display: inline;
+	color: #edbb30;
+	font-size: 40px;
+	line-height: 40px;
+	width: 400px;
+	margin: 0;
+	position: absolute;
+	bottom: 18px;
+	left: 530px;
+	font-weight: normal;
+}
 #site-title a {
-    color: #009900;
+    text-transform: uppercase;
+		color: white;
 }
 
 /* =Menu 
@@ -18,8 +72,18 @@ Version: 1.0
 -------------------------------------------------------------- */
 
 #access {
-	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	background-color: white;
+	border-bottom: 1px solid #e7e7e7;
 }
+#access a {
+	color: #333;
+	/* text-transform: uppercase; not enough room for uppercase */
+}
+#access ul ul a {
+	color: #aaa;
+	text-transform: none;
+}
+
 #access ul li.current_page_item > a,
 #access ul li.current_page_ancestor > a {
 	color: #fff;
@@ -44,7 +108,7 @@ Version: 1.0
 	margin: 4px 12px 0 0;
 }
 #access #tool input[type=text] {
-	width: 160px;
+	width: 220px;
 }
 
 /* =Layout
