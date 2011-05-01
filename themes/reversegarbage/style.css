@@ -15,8 +15,19 @@ textarea,
 .page-title span,
 .pingback a.url {
 	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+	color: #434244;
 }
 
+a:visited, a:link {
+	color: #3e5889;
+}
+#content,
+#content input,
+#content textarea {
+    color: #434244;
+    font-size: 12px;
+    line-height: 18px;
+}
 #wrapper {
 	margin-top: 0;
 }
@@ -76,17 +87,22 @@ textarea,
 	border-bottom: 1px solid #e7e7e7;
 }
 #access a {
-	color: #333;
+	color: #434244;
 	/* text-transform: uppercase; not enough room for uppercase */
+}
+#access li:hover > a,
+#access ul ul :hover > a,
+#access ul ul a {
+    background: #434244;
 }
 #access ul ul a {
 	color: #aaa;
 	text-transform: none;
 }
-
 #access ul li.current_page_item > a,
 #access ul li.current_page_ancestor > a {
 	color: #fff;
+	background-color: #434244;
 }
 * html #access ul li.current_page_item a,
 * html #access ul li.current_page_ancestor a {
@@ -165,4 +181,40 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 /* remove all padding for tighter control of layout */
 #main .widget-area ul {
 	padding: 0;
+}
+/* =Post List
+   When we display posts in blog rolls (news, donate, education, event, etc...)
+-------------------------------------------------------------- */
+.widget-container.posts {
+	margin-bottom: 0;
+}
+.post-list.hentry {
+	margin-bottom: 0;
+}
+.post-list img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	-moz-box-shadow: 5px 5px 5px #878787;
+	-webkit-box-shadow: 5px 5px 5px #878787;
+	box-shadow: 5px 5px 5px #878787;
+}
+#content .post-list .entry-title {
+	margin-left: 170px;
+	margin-bottom: 0;
+}
+#content .post-list .entry-summary {
+	margin-left: 170px;	
+	padding-top: 0;
+}
+.post-list {
+	position: relative;
+	min-height: 150px;
+	padding-bottom: 10px;
+}
+
+.entry-title a:link,
+.entry-title a:visited,
+#content .entry-title {
+   color: #434244;
 }
