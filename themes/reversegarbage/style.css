@@ -177,6 +177,17 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 	text-align: right;
 }
 
+/* Shashin Plugin */
+#content .shashin_thumb {
+	border: none;
+}
+#content .shashin_thumbs_table {
+	border: none;
+}
+#content .shashin_thumbs_table tr td {
+	border: none;
+}
+
 /* =Widget Area */
 /* remove all padding for tighter control of layout */
 #main .widget-area ul {
