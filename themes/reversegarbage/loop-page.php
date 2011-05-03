@@ -15,13 +15,15 @@
  */
 ?>
 
+
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+        <?php $heading_class = get_post_meta($post->ID, 'heading-class'); ?>
 
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<?php if ( is_front_page() ) { ?>
-						<h2 class="entry-title"><?php the_title(); ?></h2>
+						<h2 class="entry-title <?php if ($heading_class) { echo $heading_class[0]; } ?>"><?php the_title(); ?></h2>
 					<?php } else { ?>
-						<h1 class="entry-title"><?php the_title(); ?></h1>
+						<h1 class="entry-title <?php if ($heading_class) { echo $heading_class[0]; } ?>"><?php the_title(); ?></h1>
 					<?php } ?>
           
 					<div class="entry-content">

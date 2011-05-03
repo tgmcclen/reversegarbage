@@ -1,12 +1,12 @@
 - Remove "caption" custom field
 - Cleanup page hierarchy (and therefore top nav menu)
-- Hide title on front page, options:
-  - CSS in front page content
+- Hide title on certain page, options:
   - Meta attribute of "title = false" and theme re-acts
 - Footer Sitemap
 - Promotion call out on all pages
 - Remove "news" category
 - Add Shop, Donate, Education, Event categories
+- Use jQuery to class up feature items with left/right classes so that CSS can apply rules to make image appear on either left or right
 
 Blog sections are category pages, breadcrumbs should work fine, so should search.  However menu will not highlight.  Will need to use javascript to highlight menu based on breadcrumb path?  Then decordate CSS class to li item.
 

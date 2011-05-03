@@ -183,10 +183,15 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 	padding: 0;
 }
 /* =Post List
-   When we display posts in blog rolls (news, donate, education, event, etc...)
+   When we display posts in blog rolls (home, news, donate, education, event, etc...)
 -------------------------------------------------------------- */
 .widget-container.posts {
 	margin-bottom: 0;
+}
+.post-list {
+	position: relative;
+	min-height: 150px;
+	padding-bottom: 10px;
 }
 .post-list.hentry {
 	margin-bottom: 0;
@@ -207,14 +212,45 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 	margin-left: 170px;	
 	padding-top: 0;
 }
-.post-list {
+/* =Feature
+   When we display feature posts in section areas (home, news, donate, education, event, etc...)
+-------------------------------------------------------------- */
+.feature {
 	position: relative;
-	min-height: 150px;
-	padding-bottom: 10px;
+	min-height: 240px;
+	background-color: #edbb30;
+	-moz-box-shadow: 5px 5px 5px #878787;
+	-webkit-box-shadow: 5px 5px 5px #878787;
+	box-shadow: 5px 5px 5px #878787;
+}
+.feature.hentry {
+	margin-bottom: 0;
+}
+.feature img {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#content .feature .entry-title {
+	margin-right: 330px;
+	margin-bottom: 0;
+	padding: 10px;
+}
+#content .feature .entry-summary {
+	margin-right: 330px;	
+	padding: 10px;
 }
 
 .entry-title a:link,
 .entry-title a:visited,
 #content .entry-title {
    color: #434244;
+}
+/* =Single Posts and Pages
+   When we display posts in blog rolls (news, donate, education, event, etc...)
+-------------------------------------------------------------- */
+.hidden  {
+	visibility: hidden;
+	width: 0;
+	height: 0;
 }
