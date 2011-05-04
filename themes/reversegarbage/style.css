@@ -177,6 +177,22 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 	text-align: right;
 }
 
+/* =Contact Us Widget */
+#contact-us {
+	clear: both;
+	background-color: #eff0f4;
+	text-transform: uppercase;
+	padding: 14px 0;
+	width: 100%;
+	text-align: center;
+}
+#contact-us a, #contact-us a:hover {
+	color: black;
+}
+#contact-us h3 {
+	font-weight: bold;
+}
+
 /* Shashin Plugin */
 #content .shashin_thumb {
 	border: none;
@@ -235,7 +251,7 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 	box-shadow: 5px 5px 5px #878787;
 }
 .feature.hentry {
-	margin-bottom: 0;
+	margin-bottom: 20px;
 }
 .feature img {
 	position: absolute;
